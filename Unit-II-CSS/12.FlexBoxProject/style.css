@@ -142,3 +142,113 @@ header {
 .logos img {
   height: 45px;
 }
+
+.features-section {
+  padding: 80px var(--padding-inline-section);
+}
+.section-header {
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.features-area {
+  flex-wrap: wrap;
+  gap: 20px;
+  background-image: url(./assets/asset_34.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.feature-card {
+  flex-direction: column;
+  gap: 20px;
+  max-width: 30%;
+  align-items: center;
+}
+.feature-card p {
+  text-align: center;
+}
+.feature-card img {
+  width: 60px;
+}
+
+.big-feature-section {
+  padding: 30px var(--padding-inline-section);
+}
+
+.big-feature-container {
+  gap: 30px;
+}
+.feature-img img {
+  width: 100%;
+}
+.feature-desc {
+  flex-direction: column;
+  align-items: start;
+  align-content: center;
+  justify-content: center;
+}
+
+.example-section {
+  padding: 60px var(--padding-inline-section);
+}
+.example-area {
+  justify-content: space-around;
+  margin-block: 30px;
+  gap: 20px;
+}
+.example-card {
+  /* width: 23%; */
+  min-height: 300px;
+  background: black;
+  align-items: end;
+  color: white;
+  padding: 25px;
+  transition: 0.2s ease-out;
+}
+.example-card:hover {
+  box-shadow: 0 0 10px #888;
+}
+
+.example-card:nth-child(1) {
+  background:
+    linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)),
+    url(./assets/asset_36.jpeg);
+  background-size: cover;
+}
+.example-card:nth-child(2) {
+  background:
+    linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)),
+    url(./assets/asset_37.jpeg);
+  background-size: cover;
+}
+.example-card:nth-child(3) {
+  background:
+    linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)),
+    url(./assets/asset_38.jpeg);
+  background-size: cover;
+}
+.example-card:nth-child(4) {
+  background:
+    linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)),
+    url(./assets/asset_39.jpeg);
+  background-size: cover;
+}
+
+.cta-section {
+  background-color: #183b54;
+  padding: 120px var(--padding-inline-section);
+}
+
+.cta-container {
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+  align-items: center;
+}
+.cta-section p {
+  color: white;
+  margin-top: 20px;
+}
