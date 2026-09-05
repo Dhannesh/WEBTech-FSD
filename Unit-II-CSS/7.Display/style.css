@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+h1 {
+  text-align: center;
+  height: 100px;
+  width: 150px;
+}
+p {
+  width: 50%;
+}
+span {
+  height: 100px;
+}
+a {
+  /* display: inline-block; */
+  display: none;
+  height: 200px;
+  width: 200px;
+}
+img {
+  height: 300px;
+  width: 600px;
+}
+ul,
+li {
+  display: inline;
+}
+li {
+  padding: 10px;
+  background-color: blueviolet;
+  color: whitesmoke;
+  border-radius: 20px;
+}
+
+li:hover {
+  font-weight: 600;
+}

@@ -1,0 +1,24 @@
+body {
+  background-color: aliceblue;
+}
+.container {
+  width: 500px;
+  height: 500px;
+  border: 2px solid red;
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+  overflow: auto;
+}
+.container2 {
+  border: 5px solid red;
+}
+.img1 {
+  float: left;
+  padding: 10px;
+}
+.p1 {
+  border: 2px solid black;
+}
+.img2 {
+  float: right;
+}

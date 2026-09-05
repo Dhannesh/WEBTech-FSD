@@ -1,0 +1,35 @@
+html {
+  font-size: 12px;
+}
+body {
+  background-color: aliceblue;
+  font-size: 1.5em;
+}
+
+main {
+  border: 5px solid black;
+  /* width: 50%; */
+  width: 50vw;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1rem;
+}
+p {
+  font-size: 1rem;
+}
+header {
+  /* font-size: 20px; */
+  font-size: 0.5rem;
+}
+section {
+  border: 5px dashed red;
+  /* width: 75vw; */
+  background-color: antiquewhite;
+  /* height: 200vh; */
+}

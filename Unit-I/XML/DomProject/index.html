@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="name"></h1>
+    <h2 id="age"></h2>
+    <script type="module">
+      const parser = new DOMParser();
+      const xml = `<student>
+    <name>Neeraj Yadav</name>
+    <age>20</age>
+</student>`;
+      const doc = parser.parseFromString(xml, "application/xml");
+      const uName = doc.querySelector("name").textContent;
+      const age = doc.querySelector("age").textContent;
+      document.getElementById("name").textContent = uName;
+      document.getElementById("age").textContent = age;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  font-size: 24px;
+}
+
+/* #first > h2 {
+  background-color: brown;
+} */
+
+#first {
+  color: cadetblue;
+  background-color: blue;
+  /* font-family: fantasy; */
+}
+
+.pink {
+  background-color: pink;
+  /* font-family: monospace; */
+}
+#second > p {
+  background-color: brown;
+  font-family: "Times New Roman", Times, serif !important;
+}
+/* .highlight {
+  /* background-color: yellow; */
+/* font-weight: bold; */
+/* text-decoration: underline; */
+/* } */
+
+/* #first,
+#third {
+  background-color: blueviolet;
+} */
+
+/* id and class can't start with number */
+
+/* #third > p {
+  font-style: italic;
+} */
