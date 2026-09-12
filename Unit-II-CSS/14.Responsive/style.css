@@ -1,0 +1,30 @@
+body {
+  background-color: bisque;
+}
+
+/* @media( max-width:400px) { */
+/* @media (min-width: 400px){
+
+}
+
+
+@media (mid-width: 200px) and (max-width: 400px){
+
+} */
+/* @media (400px <= width <= 600px) {
+  body {
+    background-color: aquamarine;
+  }
+} */
+
+@media (width <=200px) {
+  body {
+    background-color: gold;
+  }
+}
+
+/* @media (orientation: portrait) {
+  body {
+    background-color: aqua;
+  }
+} */

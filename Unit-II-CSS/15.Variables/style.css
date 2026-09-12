@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --my-primary: aqua;
+}
+
+body {
+  background-color: azure;
+}
+
+.container {
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+  color: var(--my-var, blue);
+}
+
+.box {
+  --my-var: red;
+  padding: 20px;
+  border: 2px solid black;
+  /* background-color: var(--my-var); */
+}
+
+.box h2 {
+  margin-bottom: 20px;
+  background-color: var(--my-var);
+}
