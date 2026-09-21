@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InnerHTML Vs InnerText</title>
+  </head>
+  <body>
+    <h1>Its Me</h1>
+    <p id="p1">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+      repellat asperiores maiores sit beatae. Exercitationem accusantium, quam
+      possimus fugit, quae sed sapiente quis laboriosam delectus maxime ullam ea
+      soluta est?
+    </p>
+    <button onclick="alert('Hello from alert without window')">Alert</button>
+    <p id="p2"></p>
+    <button onclick="window.alert('Hello')">Alert</button>
+    sum=
+    <button onclick="document.write('Hello Buddy')">Click Me</button>
+    <script>
+      document.getElementById("p1").innerHTML = "<h3>Hello Buddy</h3>";
+      document.getElementById("p2").innerText = "<h3>Hello Buddy</h3>";
+
+      document.write(10 + 20);
+    </script>
+
+    <button onclick="print()">Print Me</button>
+  </body>
+</html>

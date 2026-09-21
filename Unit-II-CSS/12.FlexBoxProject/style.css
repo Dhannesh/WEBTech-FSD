@@ -52,6 +52,7 @@ ul {
   max-width: 1180px;
   margin-inline: auto;
   padding-inline: var(--padding-inline-section);
+  overflow: hidden;
 }
 
 .banner-text {
@@ -74,6 +75,9 @@ ul {
 .nav-links ul {
   justify-content: end;
   gap: 40px;
+}
+.nav-toggle {
+  display: none;
 }
 
 .hover-link {
@@ -197,11 +201,11 @@ header {
 .example-area {
   justify-content: space-around;
   margin-block: 30px;
-  gap: 20px;
+  flex-wrap: wrap;
 }
 .example-card {
-  /* width: 23%; */
-  min-height: 300px;
+  width: 23%;
+  height: 300px;
   background: black;
   align-items: end;
   color: white;

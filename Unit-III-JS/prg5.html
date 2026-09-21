@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function handleSumbit() {
+        let name = document.getElementById("name").value;
+        let pass = document.getElementById("pass").value;
+        if (!name) {
+          alert("name is missing");
+          return false;
+        }
+        if (!pass) {
+          alert("password is missing");
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form action="" onsubmit="return handleSumbit();" method="get">
+      <label for="name">Enter your name</label>
+      <input type="text" name="name" id="name" />
+      <br />
+      <label for="pass">Enter your password</label>
+      <input type="password" name="pass" id="pass" />
+      <br />
+      <button>Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

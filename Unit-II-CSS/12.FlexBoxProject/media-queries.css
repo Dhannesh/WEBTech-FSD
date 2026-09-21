@@ -1,0 +1,77 @@
+@media screen and (width <= 991px) {
+  h3 {
+    font-size: 1.2rem;
+  }
+  .nav-toggle {
+    display: block;
+    margin-right: 20px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .example-area {
+    gap: 20px;
+  }
+  .example-card {
+    width: calc(50% - 10px);
+    height: 180px;
+  }
+  .example-section {
+    padding-block: 0px;
+  }
+  .cta-section {
+    padding-block: 30px;
+  }
+}
+
+@media screen and (width <= 767px) {
+  .header-section {
+    flex-direction: column-reverse;
+  }
+  .header-left {
+    width: 100vw;
+    text-align: center;
+  }
+  .primary-button {
+    width: 100%;
+  }
+  .feature-card {
+    min-width: calc(50% - 10px);
+  }
+  .big-feature-container {
+    flex-direction: column;
+  }
+  #group2 {
+    flex-direction: column-reverse;
+  }
+  .example-card {
+    min-width: 100%;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media screen and (width <= 479px) {
+  :root {
+    --padding-inline-section: 10px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .feature-card {
+    min-width: calc(100% - 10px);
+  }
+}
