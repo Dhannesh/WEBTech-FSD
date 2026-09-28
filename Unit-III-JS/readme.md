@@ -19,6 +19,7 @@ it can be included into any html file
 NOTE: window is a global object, that is by belongs to current window, we can skip window during alert
 
 ## Datatypes
+
 1. String
 2. Number
 3. Bigint
@@ -28,4 +29,10 @@ NOTE: window is a global object, that is by belongs to current window, we can sk
 7. Null
 8. Symbol
 
+# Ajax
 
+1. get the reference of control by getElementById
+2. use callback with allEventListener on click event
+3. use fetch api to get any random data, or contact with server
+4. if response is ok then show the data
+5. otherwise show the error message

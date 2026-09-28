@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        height: 40px;
+        width: 125px;
+      }
+      img {
+        height: 300px;
+        width: 300px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>AJAX (Asynchronous JavaScript and XML)</h2>
+    <p id="loader"></p>
+    <p id="jokeContainer">Jokes will show here</p>
+    <button id="jokeBtn">Get Joke</button>
+
+    <img id="pic" src="" alt="Dog Pic will show here" />
+    <button id="dogBtn">Get Random Dog</button>
+    <script>
+      const jokeButton = document.getElementById("jokeBtn");
+      const jokePara = document.getElementById("jokeContainer");
+      const loader = document.getElementById("loader");
+      const dogButton = document.getElementById("dogBtn");
+      const picBox = document.getElementById("pic");
+
+      jokeButton.addEventListener("click", async () => {
+        loader.innerHTML = "Loading...";
+        const resp = await fetch(
+          "https://official-joke-api.appspot.com/random_joke",
+        );
+        if (!resp.ok) {
+          console.log("Error:", resp);
+        } else {
+          const data = await resp.json();
+          //   console.log(data.type);
+
+          loader.innerHTML = "";
+          jokePara.innerHTML = `
+                Type: ${data.type}<br/>
+                Setup: ${data.setup}<br/>
+                Punchline: ${data.punchline}<br/>
+            `;
+        }
+      });
+
+      dogButton.addEventListener("click", async () => {
+        loader.innerHTML = "Loading...";
+        const resp = await fetch("https://dog.ceo/api/breeds/image/random");
+        if (!resp.ok) console.log("Error in getting dog image");
+        else {
+          loader.innerHTML = "";
+          const data = await resp.json();
+          picBox.src = data.message;
+        }
+      });
+    </script>
+  </body>
+</html>
